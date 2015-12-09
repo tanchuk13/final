@@ -4,10 +4,11 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script src="js/responsive-nav.js"></script>
+	<script src="js/jquery.accordion.js"></script> <!-- doesn`t work-->
 <script type="text/javascript" src="js/modernizr-custom.js"></script>
-	
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="http://code.jquery.com/jquery-latest.pack.js" type="text/javascript"></script>
+		<script type="text/javascript" src="/js/pcvector.js"></script>
 <script src="js/jquery.bxslider.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
@@ -15,195 +16,316 @@
 		  mode: 'horizontal',
 		  captions: true
 		});
-		
 	});
-</script>
-<link href="css/jquery.bxslider.css" rel="stylesheet" />
+   </script>
+   
+ <link href="css/jquery.bxslider.css" rel="stylesheet" />
 <link rel="stylesheet" href="css/responsive-nav.css">
+      
 </head>
+
 <body>
-	<div id="header">
-		<a href="#" class="logo" title="SAP"></a>
-		<p class="mobile_hidden">The Best-Run Business Run SAP </p>
-		<span>+1 866 727-1482</span>
-		<span class ="mobile_hidden">United States</span>
-		<a href ="" class ="mobile_hidden">Login</a>
-		<a href ="" class ="mobile_hidden">Contact Us</a>
+
+<div id="wraper">
+
+		<div id="header" class ="content_wraper">
+			<a href="#" class="logo" title="SAP"></a>
+			<p class="mobile_hidden">The Best-Run Business Run SAP </p>
+			<span>+1 866 727-1482</span>
+			<span class ="mobile_hidden">United States</span>
+			<a href ="" class ="mobile_hidden">Login</a>
+			<a href ="" class ="mobile_hidden">Contact Us</a>
+		</div>
+
+		<div id="nav" class="content_wraper">
+		  <ul>
+			<li><a href="#">Overview</a></li>
+			<li><a href="#">Platform</a></li>
+			<li><a href="#">Developers</a></li>
+			<li><a href="#">Partners</a></li>
+			<li><a href="#">Marketplace</a></li>
+		  </ul>
+		</div>
+
+		<script>
+		  var navigation = responsiveNav("#nav", {
+			animate: true,        // Boolean: Use CSS3 transitions, true or false
+			transition: 400,      // Integer: Speed of the transition, in milliseconds
+			label: "Menu",        // String: Label for the navigation toggle
+			insert: "before",      // String: Insert the toggle before or after the navigation
+			customToggle: "",     // Selector: Specify the ID of a custom toggle
+			openPos: "relative",  // String: Position of the opened nav, relative or static
+			jsClass: "js",        // String: 'JS enabled' class which is added to <html> el
+			init: function(){},   // Function: Init callback
+			open: function(){},   // Function: Open callback
+			close: function(){}   // Function: Close callback
+		  });
+		</script>
+
+	
+	
+	<div id="partners">
+			<div class="partners_title"><h2>SAP HANA Cloud Partners</h2></div>
+			<div class ="partners_slogan"><p>Boundless</p></div>
+			<div class ="partners_slogan"><p>Opportunities</p></div>
+			<div class ="partners_description"> Lorem ipsum dolor sit amet. 
+			Conse cetuer adipiscing morbi com modo, idam dolor set.</div>
 	</div>
 
-	<div id="nav">
-      <ul>
-        <li><a href="#">Overview</a></li>
-        <li><a href="#">Platform</a></li>
-        <li><a href="#">Developers</a></li>
-		  <li><a href="#">Partners</a></li>
-        <li><a href="#">Marketplace</a></li>
-      </ul>
-    </div>
+	<div id="conse"  class ="content_wraper">
 
-    <script>
-      var navigation = responsiveNav("#nav", {
-        animate: true,        // Boolean: Use CSS3 transitions, true or false
-        transition: 400,      // Integer: Speed of the transition, in milliseconds
-        label: "Menu",        // String: Label for the navigation toggle
-        insert: "after",      // String: Insert the toggle before or after the navigation
-        customToggle: "",     // Selector: Specify the ID of a custom toggle
-        openPos: "relative",  // String: Position of the opened nav, relative or static
-        jsClass: "js",        // String: 'JS enabled' class which is added to <html> el
-        init: function(){},   // Function: Init callback
-        open: function(){},   // Function: Open callback
-        close: function(){}   // Function: Close callback
-      });
-    </script>
-
-	<!-- pcvector.net -->
-		<script type="text/javascript" src="http://pcvector.net/templates/pcv/js/pcvector.js"></script>
-	<!-- /pcvector.net -->	
-
-<div id="partners">
-		<div class="partners_title"><h2>SAP HANA Cloud Partners</h2></div>
-		<div class ="partners_slogan"><p>Boundless</p></div>
-		<div class ="partners_slogan"><p>Opportunities</p></div>
-		<div class ="partners_description"> Lorem ipsum dolor sit amet. 
-		Conse cetuer adipiscing morbi com modo, idam dolor set.</div>
-</div>
-
-<div id="conse">
-
-<h3>Conse ctetuer adipiscing morbi.</h3>
-<p>Ipsum sed pharetra gravida. Nullam sit. Lorem ipsum dolor sit amet. 
-Conse ctetuer adipiscing morbi comm odo, ipsum sed pharetra.  </p>
-</div>
-<div class="qoutation">
-<p>The world is looking for imagination far beyond the walls of SAP, to the collective imagination of all of us.</p>
-<p>Name name</p>
-</div>
-
-			<ul class="bxslider">
-			<li>
-				<div class="bxslider_item">
-				<img class ="" src="img/content/img_1.png">
-				
-					<h2>Polkut gradev nasertyw</h2>
-					<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-					<a href=""> Ipsum dolor </a>
-				</div>
-			
-			</li>
-			<li>
-				<div class="bxslider_item">
-				<img src="img/content/img_2.png">
-			
-				<h2>Samuy fsdfg roslvd fdsgs</h2>
-				<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-				<a href=""> Ipsum dolor </a>
-				</div>
-			</li>
-			<li>
-				<div class="bxslider_item">
-				<img  src="img/content/img_3.png">
-				
-				<h2>Norit norsic lares</h2>
-				<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-				<a href=""> Ipsum dolor </a>
-				</div>
-			</li>
-			
-		</ul>	
-		
-<div id="program">		
-	<div class="program_item">
-		<div class="program_item_top">
-		<h3>PartnerEdge Program</h3>
-		<p>1,700 + Partners</p>
-		<p>Conse ctetuer adipiscing. morbi comm odo, ipsum sed pharetra gravida. Nullam sit dolor amen.</p>
-		</div>
-		
-		<div  class="program_item_bottom">
-			<p>80 Lorem ipsum</p>
-			<p>Conse ctetuer adipiscing. morbi comm odo, ipsum sed pharetra gravida. Nullam sit.</p>
-		</div>
-		<a href ="" class ="button">Join PartnerEdge</a>
+	<h3>Conse ctetuer adipiscing morbi.</h3>
+	<p>Ipsum sed pharetra gravida. Nullam sit. Lorem ipsum dolor sit amet. 
+	Conse ctetuer adipiscing morbi comm odo, ipsum sed pharetra.  </p>
 	</div>
 	
-	<div  class="program_item">
-		<div  class="program_item_top">
-		<h3>Startup Focus Program</h3>
-		<p>1000 + Startups</p>
-		<p>Conse ctetuer adipiscing. morbi comm odo, ipsum sed pharetra gravida. Nullam sit dolor amen.</p>
+	<div class="qoutation"  class ="content_wraper">
+	<p>The world is looking for imagination far beyond the walls of SAP, to the collective imagination of all of us.</p>
+	<p>Name name</p>
+	</div>
+
+				<ul class="bxslider">
+				<li>
+					<div class="bxslider_item">
+					<img class ="" src="img/content/img_1.png">
+					
+						<h2>Polkut gradev nasertyw</h2>
+						<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+						<a href=""> Ipsum dolor </a>
+					</div>
+				
+				</li>
+				<li>
+					<div class="bxslider_item">
+					<img src="img/content/img_2.png">
+				
+					<h2>Samuy fsdfg roslvd fdsgs</h2>
+					<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+					<a href=""> Ipsum dolor </a>
+					</div>
+				</li>
+				<li>
+					<div class="bxslider_item">
+					<img  src="img/content/img_3.png">
+					
+					<h2>Norit norsic lares</h2>
+					<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+					<a href=""> Ipsum dolor </a>
+					</div>
+				</li>
+				
+			</ul>	
+			
+	<div id="program">		
+		<div class="program_item">
+			<div class="program_item_top">
+			<h3>PartnerEdge Program</h3>
+			<p>1,700 + Partners</p>
+			<p>Conse ctetuer adipiscing. morbi comm odo, ipsum sed pharetra gravida. Nullam sit dolor amen.</p>
+			</div>
+			
+			<div  class="program_item_bottom">
+				<p>80 Lorem ipsum</p>
+				<p>Conse ctetuer adipiscing. morbi comm odo, ipsum sed pharetra gravida. Nullam sit.</p>
+			</div>
+			<a href ="" class ="button"><p>Join PartnerEdge</p></a>
 		</div>
-		<div  class="program_item_bottom">
-			<p>55 Countries</p>
-			<p>Conse ctetuer adipiscing. morbi comm odo, ipsum sed pharetra gravida. Nullam sit.</p>
+		
+		<div  class="program_item">
+			<div  class="program_item_top">
+			<h3>Startup Focus Program</h3>
+			<p>1000 + Startups</p>
+			<p>Conse ctetuer adipiscing. morbi comm odo, ipsum sed pharetra gravida. Nullam sit dolor amen.</p>
+			</div>
+			<div  class="program_item_bottom">
+				<p>55 Countries</p>
+				<p>Conse ctetuer adipiscing. morbi comm odo, ipsum sed pharetra gravida. Nullam sit.</p>
+			</div>
+			<a href ="" class ="button"><p>Join Startup Focus</p></a>
 		</div>
-		<a href ="" class ="button">Join Startup Focus</a>
+	</div>	
+	
+	<div id="partnering">
+				
+				  <div class="tabs_block">
+					<ul class="tabs">
+						<li class="active">Вкладка1</li>
+						<li>Вкладка2</li>
+						<li>Вкладка3</li>
+					</ul>
+					
+					
+                <div class="box visible">
+					<ul class="bxslider">
+					<li>
+						<img class ="bxslider_item" src="img/content/IBM.jpg">
+						<div class="">
+							<h2>IBM</h2>
+							<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+							<a href=""> Ipsum dolor </a>
+						</div>
+					</li>
+					<li>
+						<img class ="bxslider_item" src="img/content/hp.jpg">
+						<div class="">
+						<h2>HP</h2>
+						<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+						<a href=""> Ipsum dolor </a>
+						</div>
+					</li>
+					<li>
+						<img class ="bxslider_item" src="img/content/cisco.jpg">
+						<div class="">
+						<h2>Cisco</h2>
+						<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+						<a href=""> Ipsum dolor </a>
+						</div>
+					</li>
+					<li>
+						<img class ="bxslider_item" src="img/content/sas.jpg">
+						<div class="">
+						<h2>SAS</h2>
+						<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+						<a href=""> Ipsum dolor </a>
+						</div>
+					</li>
+					<li>
+						<img class ="bxslider_item" src="img/content/dell.jpg">
+						<div class="">
+						<h2>Dell</h2>
+						<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+						<a href=""> Ipsum dolor </a>
+						</div>
+					</li>
+				</ul>	
+ 
+                </div>
+				
+                <div class="box">
+					<ul class="bxslider">
+						<li>
+							<img class ="bxslider_item" src="img/content/hp.jpg">
+							<div class="">
+							<h2>HP</h2>
+							<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+							<a href=""> Ipsum dolor </a>
+							</div>
+						</li>
+						
+						<li>
+							<img class ="bxslider_item" src="img/content/IBM.jpg">
+							<div class="">
+								<h2>IBM</h2>
+								<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+								<a href=""> Ipsum dolor </a>
+							</div>	
+						</li>
+
+				   </ul>
+                </div>
+
+        <script type="text/javascript" src="js/dm-tabs.js"></script>
+		
+				<!--
+                <div class="box">
+					<ul class="bxslider">
+						<li>
+							<img class ="bxslider_item" src="img/content/sas.jpg">
+							<div class="">
+							<h2>SAS</h2>
+							<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+							<a href=""> Ipsum dolor </a>
+							</div>
+						</li>
+						<li>
+							<img class ="bxslider_item" src="img/content/dell.jpg">
+							<div class="">
+							<h2>Dell</h2>
+							<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+							<a href=""> Ipsum dolor </a>
+							</div>
+						</li>
+					</div>
+					</ul>
+				  </div>
+			  
+			     <script type="text/javascript" src="js/dm-tabs.js"></script>
+				
+				
+				
+			<ul class="bxslider">
+				<li>
+					<img class ="bxslider_item" src="img/content/IBM.jpg">
+					<div class="">
+						<h2>IBM</h2>
+						<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+						<a href=""> Ipsum dolor </a>
+						
+				</li>
+				<li>
+					<img class ="bxslider_item" src="img/content/hp.jpg">
+					<div class="">
+					<h2>HP</h2>
+					<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+					<a href=""> Ipsum dolor </a>
+					</div>
+				</li>
+				<li>
+					<img class ="bxslider_item" src="img/content/cisco.jpg">
+					<div class="">
+					<h2>Cisco</h2>
+					<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+					<a href=""> Ipsum dolor </a>
+					</div>
+				</li>
+				<li>
+					<img class ="bxslider_item" src="img/content/sas.jpg">
+					<div class="">
+					<h2>SAS</h2>
+					<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+					<a href=""> Ipsum dolor </a>
+					</div>
+				</li>
+				<li>
+					<img class ="bxslider_item" src="img/content/dell.jpg">
+					<div class="">
+					<h2>Dell</h2>
+					<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+					<a href=""> Ipsum dolor </a>
+					</div>
+				</li>
+				
+								
+			</ul>	
+	
+	
+		</div>
+							
+				-->	
+
 	</div>
 </div>	
-	
-			<ul class="bxslider">
-			<li>
-				<img class ="bxslider_item" src="img/content/IBM.jpg">
-				<div class="">
-					<h2>IBM</h2>
-					<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-					<a href=""> Ipsum dolor </a>
-				</div>
-			
-			</li>
-			<li>
-				<img class ="bxslider_item" src="img/content/hp.jpg">
-				<div class="">
-				<h2>HP</h2>
-				<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-				<a href=""> Ipsum dolor </a>
-				</div>
-			</li>
-			<li>
-				<img class ="bxslider_item" src="img/content/cisco.jpg">
-				<div class="">
-				<h2>Cisco</h2>
-				<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-				<a href=""> Ipsum dolor </a>
-				</div>
-			</li>
-			<li>
-				<img class ="bxslider_item" src="img/content/sas.jpg">
-				<div class="">
-				<h2>SAS</h2>
-				<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-				<a href=""> Ipsum dolor </a>
-				</div>
-			</li>
-			<li>
-				<img class ="bxslider_item" src="img/content/dell.jpg">
-				<div class="">
-				<h2>Dell</h2>
-				<p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-				<a href=""> Ipsum dolor </a>
-				</div>
-			</li>
-			
-		</ul>	
-	
-	
-	
-	<p>Already an SAP Partner?</p>
-	<div> Conse ctetuer adipiscing. morbi comm odo, ipsum sed pharetra gravida. Nullam sit.</div>
-	
-	<a href="" class="button">Get started with SAP HANA Cloud</a>
+	<div class="contacts content_wraper">	
+		<div class ="question">Already an SAP Partner?</div>
+		<div class = "answer"> Conse ctetuer adipiscing. morbi comm odo, ipsum sed pharetra gravida. Nullam sit.</div>
+	</div>	
+		<a href="" class="button"><p>Get started with SAP HANA Cloud</p></a>
 
-	<div class ="footer_contact">
-		<span class ="phone">+1-888-528-8892</span>
-		<span class ="email">Email</span>
+		<div class ="footer_contact content_wraper">
+			<span class ="phone">+1-888-528-8892</span>
+			<span class ="email">Email</span>
+		</div>
+		
+	
+	<div id="footer">
+	<a href="">SAP.com</a>
+	<ul class ="footer_navigation">
+		<li>Privacy</li>
+		<li>Terms of Use</li>
+		<li>Legal Disclosure</li>
+		<li>Copyright</li>
+	</ul>
 	</div>
-<div id="footer">
-<a href="">SAP.com</a>
-<ul class ="footer_navigation">
-	<li>Privacy</li>
-	<li>Terms of Use</li>
-	<li>Legal Disclosure</li>
-	<li>Copyright</li>
-</ul>
 </div>
 </body>
 </html>
